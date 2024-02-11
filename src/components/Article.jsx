@@ -4,7 +4,13 @@ function Article(article) {
     <div className="article">
       <time>{article.articleData.date}</time>
       <h2>{article.articleData.title}</h2>
-      <p>{article.articleData.content}</p>
+      <img src={article.articleData.image} />
+      <p className="first-paragraph">{article.articleData.content}</p>
+      <details>
+        <summary className="continues">Continues...</summary>
+        <p>{article.articleData.continues}</p>
+      </details>
+      <hr />
     </div>
   )
 }

@@ -1,7 +1,8 @@
 import Header from './components/Header.jsx'
-import './App.css'
+import './index.css'
 import articles from './data/articles.jsx'
 import Article from './components/Article.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
         return (<Article articleData = {article} key={index} />)
       })}
 
-      {/* <Footer /> */}
+      <Footer />
       
     </>
   )
