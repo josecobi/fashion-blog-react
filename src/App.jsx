@@ -11,6 +11,7 @@ function App() {
   return (
     <>
       <Header />
+      
       {articles.map((article, index) =>{
         console.log(article)
         return (<Article articleData = {article} key={index} />)
